@@ -8,7 +8,7 @@ WORKDIR $HZ_HOME
 RUN apk --update add supervisor \
     curl && \
     mkdir -p $HZ_HOME && \
-    curl "http://download.hazelcast.com/download.jsp?version=hazelcast-$HZ_VERSION&type=tar&p=" | tar zx && \
+    curl "https://download.hazelcast.com/download.jsp?version=hazelcast-$HZ_VERSION&type=tar&p=" | tar zx && \
     cp $HZ_HOME/hazelcast-$HZ_VERSION/mancenter-2.5.war . && \
     cp $HZ_HOME/hazelcast-$HZ_VERSION/lib/hazelcast-$HZ_VERSION.jar . && \
     rm -fr hazelcast-$HZ_VERSION && \
