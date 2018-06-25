@@ -1,5 +1,5 @@
 # Hazelcast 2.5.1 + mancenter
-## lancement de l'image
+## Lancement de l'image
 
 ```cmd
 docker run -d -p 5701:5701 -p 8080:8080 -p 9001:9001 aicfr/hazelcast
